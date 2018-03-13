@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="startpage_assets/styles/remodal.css">
+	<link rel="stylesheet" type="text/css" href="startpage_assets/styles/remodal-default-theme.css">
+	<link rel="stylesheet" type="text/css" href="startpage_assets/styles/styles.css">
+
+	<script type="text/javascript" src="startpage_assets/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/masonry.ordered.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/remodal.min.js"></script>
+
+	<script type="text/javascript" src="startpage_assets/js/utils.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/searchcomplete.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/links.js"></script>
+	<script type="text/javascript" src="startpage_assets/js/link_editor.js"></script>
+</head>
+<body>
+	<div class="remodal-bg">
+		<div class="background">
+			<img id="background-image" src="https://source.unsplash.com/1920x1080/?cyberpunk">
+			<div class="background-darkener"></div>
+		</div>
+
+		<div class="editbar" id="editbar">
+			<img src="startpage_assets/icons/raw_data.svg" id="edit-raw-data">
+			<img src="startpage_assets/icons/add.svg" id="edit-add">
+			<img src="startpage_assets/icons/edit.svg" id="edit-editmode">
+			<span class="clearfix"></span>
+		</div>
+
+		<div class="content">
+			<div class="googlebar-container">
+				<div class="googlebar">
+					<input type="text" placeholder="Google" name="google-query" id="google-query-field" autofocus>
+					<div class="googlebar-suggestions" id="googlebar-suggestions">
+					</div>
+				</div>
+			</div>
+
+			<div class="links-wrapper">
+				<div class="links" id="link-view"><!--This is populated with js--></div>
+			</div>
+		</div>
+	</div>
+	<div class="remodal" data-remodal-id="edit-entry">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1>Edit Entry</h1>
+		<form id="entry-edit-form">
+			<input type="hidden" value="" name="entry_id" id="entry-editor-entry-id" />
+			<input type="hidden" value="" name="category_id" id="entry-editor-category-id" />
+			<input type="text" id="entry-edit-title" placeholder="Title">
+			<input type="text" id="entry-edit-href" placeholder="URL">
+		</form>
+		<br>
+		<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+		<button data-remodal-action="confirm" class="remodal-confirm">Save</button>
+	</div>
+	<div id="raw-data-editor">
+		<textarea name="raw-data-box" id="raw-data-box"></textarea>
+		<div class="buttonbar">
+			<div class="button-wrapper">
+				<button id="raw-data-cancel">Cancel</button>
+			</div>
+			<div class="button-wrapper">
+				<button id="raw-data-save">Save</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
