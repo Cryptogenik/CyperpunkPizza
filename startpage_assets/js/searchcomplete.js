@@ -19,7 +19,7 @@
         return;
       }
       SearchCompleter.lastSearch = text;
-      url = "http://suggestqueries.google.com/complete/search?client=chrome&q=" + text + "&callback=googlecallback";
+      url = "https://suggestqueries.google.com/complete/search?client=chrome&q=" + text + "&callback=googlecallback";
       return $.ajax({
         url: url,
         jsonp: "callback",
