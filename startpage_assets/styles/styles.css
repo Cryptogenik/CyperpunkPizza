@@ -161,11 +161,13 @@ body {
         background-color: white; }
         .links-wrapper .links .category-wrapper .category .entries .entry {
           position: relative;
-          padding: 10px; }
+          padding: 5px;
+          border-bottom: solid 2px whitesmoke;}
           .links-wrapper .links .category-wrapper .category .entries .entry .entry-title {
             width: 100%;
             color: black;
-            text-decoration: none; }
+            text-decoration: none; 
+            display: inline-block;}
           .links-wrapper .links .category-wrapper .category .entries .entry .entry-edit-btn, .links-wrapper .links .category-wrapper .category .entries .entry .entry-remove-btn {
             z-index: 50;
             position: absolute;
@@ -184,7 +186,7 @@ body {
             padding-top: 10px; }
             .links-wrapper .links .category-wrapper .category .entries .entry + * .entry-edit-btn, .links-wrapper .links .category-wrapper .category .entries .entry + * .entry-remove-btn {
               top: .25em; }
-            .entry :hover { background-color:red;}
+            .entry :hover { background-color:whitesmoke;}
       .links-wrapper .links .category-wrapper .category .colorpicker-wrapper {
         z-index: 60;
         display: none;
