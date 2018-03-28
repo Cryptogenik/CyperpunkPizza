@@ -162,7 +162,7 @@ body {
         .links-wrapper .links .category-wrapper .category .entries .entry {
           position: relative;
           padding: 5px;
-          border-bottom: solid 2px whitesmoke;}
+          border-bottom: solid 2px honeydew;}
           .links-wrapper .links .category-wrapper .category .entries .entry .entry-title {
             width: 100%;
             color: black;
@@ -186,7 +186,7 @@ body {
             padding-top: 10px; }
             .links-wrapper .links .category-wrapper .category .entries .entry + * .entry-edit-btn, .links-wrapper .links .category-wrapper .category .entries .entry + * .entry-remove-btn {
               top: .25em; }
-            .entry :hover { background-color:whitesmoke;}
+            .entry :hover { background-color:honeydew;}
       .links-wrapper .links .category-wrapper .category .colorpicker-wrapper {
         z-index: 60;
         display: none;
